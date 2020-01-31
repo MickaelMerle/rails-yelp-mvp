@@ -11,14 +11,34 @@ restaurants_attributes = [
     name: 'Dishoom',
     address: '7 Boundary St, London E2 7JE',
     category: 'italian',
-    rating: 5
+    phone_number: '5145145146'
   },
   {
     name: 'Pizza East',
     address: '56A Shoreditch High St, London E1 6PQ',
     category: 'japanese',
-    rating: 4
+    phone_number: '5145145146'
+  },
+  {
+    name: 'Pizza Pizza',
+    address: 'Montreal',
+    category: 'chinese',
+    phone_number: '5145145146'
+  },
+  {
+    name: 'East',
+    address: 'paris',
+    category: 'french',
+    phone_number: '5145145146'
+  },
+  {
+    name: 'West',
+    address: 'laval',
+    category: 'belgian',
+    phone_number: '5145145146'
   }
 ]
+
+Restaurant.destroy_all
 Restaurant.create!(restaurants_attributes)
 puts 'Finished!'
