@@ -1,0 +1,12 @@
+<h1>All Tasks</h1>
+  <%= link_to "Create Restaurant", restaurants_path %>
+
+<% @restaurants.each do |restaurant| %>
+  <p> <%= restaurant.name %></p>
+  <p> <%= restaurant.address %></p>
+  <p> <%= restaurant.category %></p>
+  <%= link_to "Go to Restaurant", restaurant_path(restaurant) %>
+<%= link_to "Edit Review", restaurant_path(restaurant) %>
+
+  <hr>
+<% end %>
